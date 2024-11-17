@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tanuljon meg sakkozni - Átfogó útmutató kezdőknek és haladóknak. Ismerje meg a sakk alapjait, stratégiáit és taktikáit.">
-    <meta name="keywords" content="sakk, sakk tanulás, sakk kezdőknek, sakk stratégiák, magyar sakk">
-    <meta name="author" content="Magyar Sakk Akadémia">
+    <meta name="description" content="Ismerje meg a sakk alapjait, stratégiáit és fejlessze játéktudását. Átfogó útmutató kezdőknek és haladóknak.">
+    <meta name="keywords" content="sakk, sakk tanulás, sakk stratégiák, sakk kezdőknek, magyar sakk">
+    <meta name="author" content="Sakk Akadémia">
     <title>Sakk Tanulás - Átfogó útmutató kezdőknek és haladóknak</title>
     <style>
         * {
@@ -15,21 +15,24 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
         }
 
         header {
-            background-color: #1a1a1a;
+            background: #1a1a1a;
             color: white;
-            padding: 2rem 1rem;
             text-align: center;
+            padding: 2rem;
         }
 
         nav {
-            background-color: #333;
+            background: #333;
             padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         nav ul {
@@ -48,15 +51,14 @@
             text-decoration: none;
         }
 
-        .container {
+        section {
+            padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
         }
 
         h1, h2, h3 {
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
+            margin-bottom: 1rem;
         }
 
         p {
@@ -66,12 +68,64 @@
         img {
             max-width: 100%;
             height: auto;
-            margin: 2rem 0;
+            margin: 1rem 0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .cookie-banner {
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/chess1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #555;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .cookie-notice {
             position: fixed;
             bottom: 0;
             left: 0;
@@ -80,50 +134,17 @@
             color: white;
             padding: 1rem;
             text-align: center;
-            display: none;
+            z-index: 1000;
         }
 
-        .cookie-banner.show {
-            display: block;
-        }
-
-        .cookie-banner button {
-            background: #4CAF50;
-            color: white;
+        .cookie-notice button {
+            background: white;
+            color: black;
             border: none;
             padding: 0.5rem 1rem;
             margin-left: 1rem;
             cursor: pointer;
             border-radius: 4px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 2rem auto;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        form button {
-            background: #1a1a1a;
-            color: white;
-            border: none;
-            padding: 0.8rem 2rem;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        footer {
-            background: #1a1a1a;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
         }
 
         @media (max-width: 768px) {
@@ -136,16 +157,22 @@
                 margin: 0.5rem 0;
             }
 
-            .container {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            section {
                 padding: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Sakk Tanulás</h1>
-        <p>Átfogó útmutató kezdőknek és haladóknak</p>
+    <header class="hero">
+        <div>
+            <h1>Fedezze fel a sakk világát</h1>
+            <p>Átfogó útmutató kezdőknek és haladóknak</p>
+        </div>
     </header>
 
     <nav>
@@ -158,95 +185,94 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <section id="alapok">
-            <h2>A sakk alapjai</h2>
-            <img src="images/chess1.jpg" alt="Sakktábla alapállásban">
-            <p>A sakk egy stratégiai táblajáték, amelyet két játékos játszik egy 64 mezőből álló táblán. A játék célja az ellenfél királyának mattot adni. A sakkban minden figurának megvan a maga egyedi mozgása és szerepe...</p>
-            
-            <h3>A bábok mozgása</h3>
-            <img src="images/chess2.jpg" alt="Sakk bábok mozgása">
-            <p>A gyalog csak előre léphet egy mezőt, illetve az első lépésében kettőt. Ütni átlósan tud egy mezőt előre. A bástya vízszintesen és függőlegesen mozoghat tetszőleges számú mezőt...</p>
-        </section>
+    <section id="alapok">
+        <h2>A sakk alapjai</h2>
+        <img src="images/chess2.jpg" alt="Sakktábla alapállása">
+        <p>A sakk egy stratégiai táblajáték, amelyet két játékos játszik egy 64 mezőből álló táblán. A játék célja az ellenfél királyának mattolása.</p>
+        
+        <h3>A bábok mozgása</h3>
+        <p>Minden bábunak sajátos mozgása van:</p>
+        <ul>
+            <li>Gyalog: Előre egy mezőt léphet, első lépésben kettőt is</li>
+            <li>Bástya: Vízszintesen és függőlegesen mozoghat</li>
+            <li>Huszár: L-alakban mozog</li>
+            <li>Futó: Átlósan mozoghat</li>
+            <li>Vezér: Minden irányban mozoghat</li>
+            <li>Király: Minden irányban egy mezőt léphet</li>
+        </ul>
+    </section>
 
-        <section id="strategiak">
-            <h2>Sakk stratégiák</h2>
-            <img src="images/chess3.jpg" alt="Sakk stratégiák">
-            <p>A sikeres sakkjátékhoz elengedhetetlen a jó stratégia. A pozíciós játék, a centrum ellenőrzése, és a bábok fejlesztése mind kulcsfontosságú elemek...</p>
-            
-            <h3>Középjáték taktikák</h3>
-            <img src="images/chess4.jpg" alt="Középjáték taktikák">
-            <p>A középjátékban fontos a támadások előkészítése, a gyenge pontok kihasználása, és az ellenfél gyengeségeinek feltárása...</p>
-        </section>
+    <section id="strategiak">
+        <h2>Alapvető stratégiák</h2>
+        <img src="images/chess3.jpg" alt="Sakk stratégia bemutató">
+        <p>A sikeres sakkjáték kulcsa a jó stratégia. Íme néhány alapvető stratégiai elv:</p>
+        
+        <h3>Központ ellenőrzése</h3>
+        <p>A tábla középső négy mezője (e4, e5, d4, d5) kulcsfontosságú. Ezek ellenőrzése nagyobb mozgásteret és több lehetőséget biztosít.</p>
 
-        <section id="megnyitasok">
-            <h2>Klasszikus megnyitások</h2>
-            <img src="images/chess5.jpg" alt="Sakk megnyitások">
-            <p>A megnyitás a játszma első szakasza, ahol a bábok fejlesztése és a centrum elfoglalása a fő cél...</p>
-            
-            <h3>Népszerű megnyitási rendszerek</h3>
-            <img src="images/chess6.jpg" alt="Megnyitási rendszerek">
-            <p>A Szicíliai védelem, a Spanyol megnyitás, és a Királycsel mind olyan klasszikus megnyitások, amelyek évszázadok óta népszerűek...</p>
-        </section>
+        <h3>Fejlődés</h3>
+        <img src="images/chess4.jpg" alt="Sakk fejlődés">
+        <p>A játék kezdeti szakaszában fontos a tisztek gyors fejlesztése. Először a könnyűtiszteket (huszár, futó) fejlesszük, majd következhet a sáncolás.</p>
+    </section>
 
-        <section id="vegjatekok">
-            <h2>Végjáték technikák</h2>
-            <img src="images/chess7.jpg" alt="Végjáték technikák">
-            <p>A végjáték a partit eldöntő szakasz, ahol a király aktivizálása és a gyalogok helyes kezelése kulcsfontosságú...</p>
-            
-            <h3>Alapvető mattadási technikák</h3>
-            <img src="images/chess8.jpg" alt="Mattadási technikák">
-            <p>A király és vezér matt, a király és bástya matt, valamint az alapsor mattok ismerete elengedhetetlen...</p>
-        </section>
+    <section id="megnyitasok">
+        <h2>Népszerű megnyitások</h2>
+        <img src="images/chess5.jpg" alt="Sakk megnyitások">
+        <p>A megnyitás a játszma első néhány lépése, amely meghatározza a játék jellegét.</p>
 
-        <section id="kapcsolat">
-            <h2>Kapcsolat</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Az Ön neve" required>
-                <input type="email" name="email" placeholder="E-mail címe" required>
-                <textarea name="message" placeholder="Üzenete" rows="5" required></textarea>
-                <button type="submit">Küldés</button>
-            </form>
-        </section>
-    </div>
+        <h3>Olasz megnyitás</h3>
+        <p>1.e4 e5 2.Hf3 Hc6 3.Fc4 - Az egyik legklasszikusabb megnyitás, amely gyors fejlődést és aktív játékot eredményez.</p>
+
+        <h3>Spanyol megnyitás</h3>
+        <img src="images/chess6.jpg" alt="Spanyol megnyitás">
+        <p>1.e4 e5 2.Hf3 Hc6 3.Fb5 - A legmagasabb szinten is gyakran játszott megnyitás, amely komoly stratégiai játékot eredményez.</p>
+    </section>
+
+    <section id="vegjatekok">
+        <h2>Végjátékok</h2>
+        <img src="images/chess7.jpg" alt="Sakk végjáték">
+        <p>A végjáték a játszma utolsó szakasza, amikor már kevés bábu van a táblán. Néhány alapvető végjáték típus:</p>
+
+        <h3>Király és gyalog végjátékok</h3>
+        <p>A legegyszerűbb végjátékok, ahol a gyalogok helyes kezelése kulcsfontosságú.</p>
+
+        <h3>Bástyavégjátékok</h3>
+        <img src="images/chess8.jpg" alt="Bástya végjáték">
+        <p>A leggyakoribb végjátéktípus, ahol a bástya aktivitása és a király szerepe meghatározó.</p>
+    </section>
+
+    <section id="kapcsolat">
+        <h2>Kapcsolat</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Név" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Üzenet" rows="5" required></textarea>
+            <button type="submit">Küldés</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Sakk Tanulás. Minden jog fenntartva.</p>
-        <p><a href="#privacy" style="color: white;">Adatvédelmi irányelvek</a> | 
-           <a href="#terms" style="color: white;">Felhasználási feltételek</a></p>
+        <p><a href="#privacy">Adatvédelmi nyilatkozat</a> | <a href="#terms">Felhasználási feltételek</a></p>
+        <p>&copy; 2024 Sakk Akadémia. Minden jog fenntartva.</p>
     </footer>
 
-    <div id="cookie-banner" class="cookie-banner">
-        <p>Ez a weboldal sütiket használ a felhasználói élmény javítása érdekében. 
-           <button onclick="acceptCookies()">Elfogadom</button></p>
+    <div class="cookie-notice" id="cookieNotice">
+        Ez a weboldal sütiket használ a jobb felhasználói élmény érdekében.
+        <button onclick="document.getElementById('cookieNotice').style.display='none'">Elfogadom</button>
     </div>
 
-    <script>
-        // Minimális JavaScript a cookie banner kezeléséhez
-        window.onload = function() {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                document.getElementById('cookie-banner').classList.add('show');
-            }
-        }
-
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            document.getElementById('cookie-banner').classList.remove('show');
-        }
-    </script>
-
-    <!-- Adatvédelmi irányelvek -->
+    <!-- Adatvédelmi nyilatkozat -->
     <div id="privacy" style="display: none;">
-        <h2>Adatvédelmi irányelvek</h2>
-        <p>Az Ön személyes adatainak védelme kiemelten fontos számunkra. Adatkezelési gyakorlatunk során az alábbi elveket követjük...</p>
-        <!-- További adatvédelmi tartalom -->
+        <h2>Adatvédelmi nyilatkozat</h2>
+        <p>Az Ön személyes adatainak védelme kiemelten fontos számunkra. Személyes adatait bizalmasan kezeljük és harmadik félnek nem adjuk át.</p>
+        <!-- További adatvédelmi információk... -->
     </div>
 
     <!-- Felhasználási feltételek -->
     <div id="terms" style="display: none;">
         <h2>Felhasználási feltételek</h2>
         <p>A weboldal használatával Ön elfogadja az alábbi feltételeket...</p>
-        <!-- További felhasználási feltételek -->
+        <!-- További felhasználási feltételek... -->
     </div>
 </body>
 </html>

